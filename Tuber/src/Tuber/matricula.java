@@ -2,29 +2,14 @@ package Tuber;
 
 import java.util.Random;
 
-public class Randomcreate {
+public class matricula {
 	Random rand = new Random();
-	
-	//	NOMBRES PARA EL CONDUCTOR
-	String[] nombres = new String[] {"Elías", "Juan", "Carmen", "Jennifer"};
-	String[] apellidos = new String[] {"Muñoz", "Fernández", "Soto", "Troncoso"};
-	
-	//	CONTENIDO DE MATRICULA 
+
 	char[] Letras = new char[] {'A','B','C','D','E','F','G','H','I','J','K','L','N','Ñ','O','P','Q','R','S','T','U','W','X','Y','Z'};
 	char[] Numeros = new char[] {'0','1','2','3','4','5','6','7','8','9'};
 	char[] matricula_Letras = new char[4];
 	char[] matricula_Numeros = new char[2];
-
-	//	CREANDO NOMBRE RANDOM
-	public void randomName() {
-		String nombre1, apellido1;
-		Randomcreate obj1 = new Randomcreate();
-		
-		nombre1 = obj1.nombres[rand.nextInt(obj1.nombres.length)];
-		apellido1 = obj1.apellidos[rand.nextInt(obj1.apellidos.length)];
-		System.out.print("Nombre del conductor/a: "+(nombre1 + " "+apellido1));
-	}
-	//	CREANDO MATRICULA RANDOM
+	
 	public void randomMatricula() {
 		char[] matricula = new char[4];
 		char[] numeros = new char[2];
@@ -41,3 +26,4 @@ public class Randomcreate {
 		System.out.print(matricula_Letras); System.out.print(matricula_Numeros);
 	}
 }
+	
