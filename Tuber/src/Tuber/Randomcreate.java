@@ -5,24 +5,30 @@ import java.util.Random;
 public class Randomcreate {
 	Random rand = new Random();
 	
-	//	NOMBRES PARA EL CONDUCTOR
-	String[] nombres = new String[] {"ElÌas", "Juan", "Carmen", "Jennifer"};
-	String[] apellidos = new String[] {"MuÒoz", "Fern·ndez", "Soto", "Troncoso"};
+	//	INFO CONDUCTOR
+	String[] nombres = new String[] {"El√≠as", "Juan", "Carmen", "Jennifer","Nicolas","Gabriela","Manuel","Macarena","Daniel","Elizabeth","Felipe","Matias","Catalina"};
+	String[] apellidos = new String[] {"Mu√±oz", "Fern√°ndez", "Soto", "Troncoso","P√©rez","Gonzales","Silva","Espinoza","Molina","Sandoval","Escobar","Alarcon","Correa"};
+	String[] num1 = new String[] {"2","3","4","5",};
+	String[] num2 = new String[] {"0","1","2","3","4","5","6","7","8","9"};
 	
 	//	CONTENIDO DE MATRICULA 
-	char[] Letras = new char[] {'A','B','C','D','E','F','G','H','I','J','K','L','N','—','O','P','Q','R','S','T','U','W','X','Y','Z'};
+	char[] Letras = new char[] {'A','B','C','D','E','F','G','H','I','J','K','L','N','√ë','O','P','Q','R','S','T','U','W','X','Y','Z'};
 	char[] Numeros = new char[] {'0','1','2','3','4','5','6','7','8','9'};
 	char[] matricula_Letras = new char[4];
 	char[] matricula_Numeros = new char[2];
 
-	//	CREANDO NOMBRE RANDOM
+	//	CREANDO CONDUCTOR RANDOM
 	public void randomName() {
-		String nombre1, apellido1;
+		String nombre1, apellido1, edad1, edad2;
 		Randomcreate obj1 = new Randomcreate();
 		
 		nombre1 = obj1.nombres[rand.nextInt(obj1.nombres.length)];
 		apellido1 = obj1.apellidos[rand.nextInt(obj1.apellidos.length)];
-		System.out.print("Nombre del conductor/a: "+(nombre1 + " "+apellido1));
+		edad1 = obj1.num1[rand.nextInt(obj1.num1.length)];
+		edad2 = obj1.num2[rand.nextInt(obj1.num2.length)];
+		
+		System.out.println("Nombre del conductor/a: "+(nombre1 + " "+apellido1));
+		System.out.println("Edad del conductor/a: "+(edad1 + edad2));
 	}
 	//	CREANDO MATRICULA RANDOM
 	public void randomMatricula() {
