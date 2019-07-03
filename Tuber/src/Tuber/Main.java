@@ -7,9 +7,8 @@ public class Main {
 //	Librería "random"
 		Random rand = new Random();
 		
-		Randomcreate r = new Randomcreate();
-		r.randomName();
-	
+		Driver obj = new Driver();
+		obj.driverName();
+		
 	}
-
 }
