@@ -51,6 +51,6 @@ public class Autos {
 	public void dataMatricula() {
 		Autos obj = new Autos();
 		System.out.println("Matricula del Auto: " + obj.auto_matricula);
-		System.out.println("Modelod el auto: " + obj.auto_modelo);
+		System.out.println("Modelo del auto: " + obj.auto_modelo);
 	}
 }
