@@ -66,6 +66,7 @@ public class Interfaz {
 			double[] driver_lat = new double[obj.getPosicion().length];
 			double[] driver_lon = new double[obj.getPosicion().length];
 			System.out.println("Conductores cercanos al pasajero: "+driver.cantidad);
+			double[] nuevo_cantidad = new double[] {0.0,1.0,2.0,3.0,4.0,5.0,6.0,7.0,8.0,9.0,10.0};
 			for (int j=0; j<driver.cantidad; j++) {
 					int i;
 					i = rand.nextInt(obj.getPosicion().length);	
@@ -84,13 +85,14 @@ public class Interfaz {
 					} else {}
 					distancia_driver_client_total = (distancia_driver_client_lat + distancia_driver_client_lon)*100;
 					if (distancia_driver_client_total <=10) {
-					System.out.println("El conductor" +(j+1) + " se encuentra en: " +cantidad_conductores[i]);
+					System.out.println("El conductor se encuentra en: " + driver.posicion[i]);
 					System.out.println(Math.ceil(distancia_driver_client_total));
+					break;
 					} else 	{}
+				}
 			}
 		}
 	}
-}
 
 		
 		
