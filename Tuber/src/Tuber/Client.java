@@ -8,6 +8,9 @@ public class Client {
 	public String[] posicion;
 	public double[] latitud;
 	public double[] longitud;
+	public String[] posicion_final;
+	public double[] latitud_final;
+	public double[] longitud_final;
 	public int cantidad;
 	
 	public Client() {
