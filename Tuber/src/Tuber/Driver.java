@@ -9,7 +9,9 @@ public class Driver {
 	public String driver_age;
 	public int driver_personality;
 	public int cantidad;
-	public String posicion;
+	public String[] posicion;
+	public double[] latitud;
+	public double[] longitud;
 	public boolean preferences_km;
 	
 	//	Data para el conductor
@@ -46,7 +48,7 @@ public class Driver {
 		
 		driver_name = nombre1 + " " + apellido1;
 		driver_age = edad1 + edad2;
-		driver_personality = personalidad1;
+		driver_personality = preferencia_km;
 		
 	}
 	
@@ -62,11 +64,8 @@ public class Driver {
 		System.out.println("Nombres del conductor/a: "+obj.driver_name);
 		System.out.println("Edad: "+(obj.driver_age)+ " años." );
 	}
-	public int getPersonality() {
+	public int getPreference() {
 		return driver_personality;
 	}
 	 
 }
-
-	
-
