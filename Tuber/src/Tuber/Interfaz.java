@@ -21,6 +21,7 @@ public class Interfaz {
 			double distancia_viaje_inicio_final_lat;
 			double distancia_viaje_inicio_final_lon;
 			double distancia_viaje_inicio_final_total;
+			double precio_total;
 			
 			//CLIENTES
 			client.posicion = obj.getPosicion();
@@ -49,6 +50,8 @@ public class Interfaz {
 			}else {}
 			distancia_viaje_inicio_final_total = (distancia_viaje_inicio_final_lat + distancia_viaje_inicio_final_lon)*100;
 			System.out.println("Distancia entre punto de partida y de llegada: " + Math.ceil(distancia_viaje_inicio_final_total) + "Km.");
+			precio_total = ((Math.ceil(distancia_viaje_inicio_final_total))*1123);
+			System.out.println("Total a pagar: $" +precio_total );
 			
 			// LATITUD CLIENT  	client.latitud[k];
 			// LONGITUD CLIENT	client.longitud[k];
